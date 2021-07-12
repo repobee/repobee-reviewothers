@@ -14,7 +14,7 @@ with open(
     __version__ = line.split("=")[1].strip(" '\"\n")
     assert re.match(r"^\d+(\.\d+){2}(-(alpha|beta|rc)(\.\d+)?)?$", __version__)
 
-test_requirements = ["pytest"]
+test_requirements = ["pytest", "coverage"]
 required = ["repobee>=3.0.0"]
 
 setup(
